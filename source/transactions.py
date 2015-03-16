@@ -67,13 +67,11 @@ if FILE_EXISTS==True:
         x=float(x)
         if TYPE=="deposit":
             x=x+AMOUNT
-            x=str(x)
             f = open(BALANCE,'w')
             f.write(x)
             f.close()
         if TYPE=="withdrawl":
             x=x-AMOUNT
-            x=str(x)
             f = open(BALANCE,'w')
             f.write(x)
             f.close()
